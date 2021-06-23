@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "fooont", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Header */
+#header {
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+  background: white;
+  z-index: 1;
+}
+
+#header > div {
+  height: 80px;
+}
+
+.logo-container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo-container > img {
+  width: 154px;
+}
+
+.navigation-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navigation-container ul li {
+  display: inline-block;
+  padding: 0 17.5px;
+}
+
+.navigation-container ul li:hover a {
+    color: #ff931e;
+}
+
+.navigation-container ul li.active a {
+  color: #ff931e;
+}
+
+.navigation-container ul li:first-child {
+  padding-left: 0;
+}
+
+.navigation-container ul li:last-child {
+  padding-right: 0;
+}
+
+.navigation-container ul li a {
+  text-decoration: none;
+  line-height: 1.41;
+  font-size: 17px;
+  color: black;
+  transition: 150ms all linear;
+}
+
+/* Header end */
+
+/* Section */
+
+.section {
+    position: relative;
+    margin-top: 40px;
+}
+
+.card {
+  z-index: 0;
+
+  width: 346px;
+  height: 456px;
+  border-radius: 4px;
+  border: 1px solid #d5dde4;
+  padding: 40px 20px;
+  position: relative;
+  transition: 150ms all linear;
+  position: absolute;
+  top: 0;
+}
+
+.card:nth-child(1) {
+  left: 0;
+}
+.card:nth-child(2) {
+  left: 50%;
+  transform: translate(-50%);
+}
+.card:nth-child(2):hover {
+  left: 50%;
+  transform: translate(-50%) scale(1.02);
+}
+.card:nth-child(3) {
+  right: 0;
+}
+
+.card:hover {
+  z-index: 0;
+  transform: scale(1.02);
+}
+
+.card a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.image-container {
+  position: relative;
+  height: 180px;
+}
+
+.image-container > img {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-container {
+  padding-top: 20px;
+}
+
+.title-container > h3 {
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.description-container {
+  padding-top: 16px;
+}
+
+.description-container > p {
+  font-size: 16px;
+  line-height: 1.62;
+  color: #5f6773;
+  text-align: center;
+}
+
+/* Section End */
